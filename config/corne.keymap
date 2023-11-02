@@ -48,7 +48,6 @@
             // | CTRL |  /  |  '  |  #  |  :  |  ~  |   |  -  |  =  |  +  |  [  |  ]  |  \   |
             // | SHFT |  ?  |  `  |  .  |  ;  |  @  |   |  _  |  <  |  >  |  {  |  }  | "|"  |
             //                    |     |     | SPC |   | ENT |     | ALT |
-            // &kp U00A3
 
             bindings = <
 &kp TAB    &kp EXCL   &kp AT     &kp POUND        &kp DLLR       &kp PRCNT     &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DEL
@@ -62,13 +61,13 @@
             // -----------------------------------------------------------------------------------------
             // | F12  | F1   | F2   | F3   | F4   | F5   |   | F6   | F7     | F8    | F9   | F10  | F11  |
             // | BT_C | BT_0 | BT_1 | BT_2 | BT_3 | BT_4 |   | REW  | VOL_D  | VOL_U | FF   | PP   | MUTE |
-            // | WINK | L    |      | C    | V    |      |   | CAPS | BRI_DN | BRI_U | PREV | NEXT | WINK |
+            // | WINK | L    |      |      | V    |      |   | CAPS | BRI_DN | BRI_U | PREV | NEXT | WINK |
             //                      |      |      | SPC  |   | ENT  |        | ALT   |
 
             bindings = <
 &kp F12     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6    &kp F7        &kp F8        &kp F9      &kp F10           &kp F11
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_RW  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_FF    &kp C_PLAY_PAUSE  &kp C_MUTE
-&kp LGUI    &kp L         &trans        &kp C         &kp V         &trans          &kp CLCK  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT        &kp LGUI
+&kp LGUI    &kp L         &trans        &trans         &kp V         &trans          &kp CLCK  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT        &kp LGUI
                                         &trans        &trans        &kp SPACE       &kp RET   &trans        &kp LALT
             >;
         };

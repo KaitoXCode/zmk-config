@@ -37,7 +37,7 @@
             bindings = <
 &kp TAB    &kp N1    &kp N2     &kp N3  &kp N4  &kp N5       &kp N6      &kp N7    &kp N8    &kp N9     &kp N0    &kp DELETE
 &kp LCTRL  &trans    &trans     &trans  &trans  &trans       &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT  &trans    &kp RCTRL
-&kp LSHFT  &kp LALT  &kp PSCRN  &trans  &trans  &trans       &caps_word  &trans    &trans    &trans     &kp RALT  &kp RSHIFT
+&kp LSHFT  &kp LALT  &kp PSCRN  &trans  &to 0   &to 4        &caps_word  &trans    &trans    &trans     &kp RALT  &kp RSHIFT
                                 &trans  &trans  &kp SPACE    &kp RET     &trans    &kp LALT
             >;
         };
@@ -67,8 +67,17 @@
             bindings = <
 &kp F12     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6    &kp F7        &kp F8        &kp F9      &kp F10           &kp F11
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_RW  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_FF    &kp C_PLAY_PAUSE  &kp C_MUTE
-&kp LGUI    &kp L         &trans        &trans         &kp V         &trans          &kp CLCK  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT        &kp LGUI
+&kp LGUI    &kp L         &trans        &trans        &kp V         &trans          &kp CLCK  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT        &kp LGUI
                                         &trans        &trans        &kp SPACE       &kp RET   &trans        &kp LALT
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp TAB     &kp SEMI  &kp COMMA  &kp DOT  &kp P  &kp Y        &kp F    &kp G  &kp C     &kp R  &kp L  &kp BSPC
+&kp LCTRL   &kp A     &kp O      &kp E    &kp U  &kp I        &kp D    &kp H  &kp T     &kp N  &kp S  &kp ESC
+&kp LSHIFT  &kp APOS  &kp Q      &kp J    &kp K  &kp X        &kp B    &kp M  &kp W     &kp V  &kp Z  &kp RSHIFT
+                                 &mo 3    &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LALT
             >;
         };
     };

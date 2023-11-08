@@ -27,6 +27,21 @@
             >;
         };
 
+        dvorak {
+            // -----------------------------------------------------------------------------------------
+            // | TAB  | ; : |  ,  |  .   |  P  |  Y  |   |  F  |  G   |  C  |  R  |  L  | BKSP  |
+            // | CTRL |  A  |  O  |  E   |  U  |  I  |   |  D  |  H   |  T  |  N  |  S  | ESC   |
+            // | SHFT | ' " |  Q  |  J   |  K  |  X  |   |  B  |  M   |  W  |  V  |  Z  | SHIFT |
+            //                    | BTML | LWR | SPC |   | ENT | RSE  | ALT |
+
+            bindings = <
+&kp TAB     &kp SEMI  &kp COMMA  &kp DOT  &kp P  &kp Y        &kp F    &kp G  &kp C     &kp R  &kp L  &kp BSPC
+&kp LCTRL   &kp A     &kp O      &kp E    &kp U  &kp I        &kp D    &kp H  &kp T     &kp N  &kp S  &kp ESC
+&kp LSHIFT  &kp APOS  &kp Q      &kp J    &kp K  &kp X        &kp B    &kp M  &kp W     &kp V  &kp Z  &kp RSHIFT
+                                 &mo 3    &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LALT
+            >;
+        };
+
         lower_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1   |  2    |  3  |  4     |  5     |   |  6   |  7  |  8  |  9  |  0   | BKSP |
@@ -69,21 +84,6 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_RW  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_FF    &kp C_PLAY_PAUSE  &kp C_MUTE
 &kp LGUI    &kp L         &trans        &trans        &kp V         &trans          &kp CLCK  &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT        &kp LGUI
                                         &trans        &trans        &kp SPACE       &kp RET   &trans        &kp LALT
-            >;
-        };
-
-        dvorak {
-            // -----------------------------------------------------------------------------------------
-            // | TAB  | ; : |  ,  |  .   |  P  |  Y  |   |  F  |  G   |  C  |  R  |  L  | BKSP  |
-            // | CTRL |  A  |  O  |  E   |  U  |  I  |   |  D  |  H   |  T  |  N  |  S  | ESC   |
-            // | SHFT | ' " |  Q  |  J   |  K  |  X  |   |  B  |  M   |  W  |  V  |  Z  | SHIFT |
-            //                    | BTML | LWR | SPC |   | ENT | RSE  | ALT |
-
-            bindings = <
-&kp TAB     &kp SEMI  &kp COMMA  &kp DOT  &kp P  &kp Y        &kp F    &kp G  &kp C     &kp R  &kp L  &kp BSPC
-&kp LCTRL   &kp A     &kp O      &kp E    &kp U  &kp I        &kp D    &kp H  &kp T     &kp N  &kp S  &kp ESC
-&kp LSHIFT  &kp APOS  &kp Q      &kp J    &kp K  &kp X        &kp B    &kp M  &kp W     &kp V  &kp Z  &kp RSHIFT
-                                 &mo 3    &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LALT
             >;
         };
     };
